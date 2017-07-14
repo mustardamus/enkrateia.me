@@ -1,0 +1,27 @@
+{
+  "name": "enkrateia.me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt build && nuxt start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-vue": "beta",
+    "eslint-plugin-html": "^3.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
