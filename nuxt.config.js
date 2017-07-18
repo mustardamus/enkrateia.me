@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     devBaseUrl: 'http://localhost:3000',
-    baseUrl: 'https://enkateia.me'
+    baseUrl: 'https://enkrateia.me'
   },
 
   build: {
