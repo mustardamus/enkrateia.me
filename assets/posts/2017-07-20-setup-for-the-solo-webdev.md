@@ -11,6 +11,12 @@ date: 2017-07-17
 - Deployment
 - Rules
 
+## Local setup
+
+* brew
+* git git-flow-avh
+* git config --global core.editor "nano"
+
 
 
 ## Login as root
