@@ -1,6 +1,6 @@
 <template>
   <div>
-    To new beginnings and old knowledge.
+    To new beginnings and old knowledge. Auto-deploy ftw!
   </div>
 </template>
 
