@@ -1,0 +1,65 @@
+const fs = require('fs')
+const path = require('path')
+
+global.Date.prototype.monthDays = function () {
+  const d = new Date(this.getFullYear(), this.getMonth() + 1, 0)
+  return d.getDate()
+}
+
+const zeroPadNum = num => {
+  if (num < 10) {
+    return `0${num}`
+  } else {
+    return num.toString()
+  }
+}
+
+const getCurrentMonthDir = () => {
+  const habitsDir = path.join(__dirname, '../assets/habits')
+  const curDate = new Date()
+  const curYear = curDate.getFullYear().toString()
+  const curMonth = zeroPadNum(curDate.getMonth() + 1)
+
+  return path.join(habitsDir, curYear, curMonth)
+}
+
+const getHabitDays = (habitId, min, bonus) => {
+  let ret = []
+  const dir = getCurrentMonthDir()
+  const days = new Date().monthDays()
+
+  for (let day = 1; day <= days; day++) {
+    const filePath = path.join(dir, `${zeroPadNum(day)}.json`)
+    let done = false
+    let bonus = false
+
+    if (fs.existsSync(filePath)) {
+      const dayObj = require(filePath)
+      const val = dayObj[habitId]
+
+      if (val && val >= min) {
+        done = true
+      }
+
+      if (val && val >= bonus) {
+        bonus = true
+      }
+    }
+
+    ret.push({ day, done, bonus })
+  }
+
+  return ret
+}
+
+module.exports = {
+  'GET /habits': (req, res) => {
+    const habitsIndex = require(path.join(__dirname, '../assets/habits'))
+    const habits = habitsIndex.map(habit => {
+      const days = getHabitDays(habit.id, habit.min, habit.bonus)
+      return Object.assign(habit, { days })
+    })
+
+    res.json(habits)
+  }
+}
