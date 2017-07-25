@@ -42,11 +42,11 @@ const postsIndex = posts.map(post => {
 })
 
 module.exports = {
-  'GET /posts': (req, res, next) => {
+  'GET /posts': (req, res) => {
     res.json(postsIndex)
   },
 
-  'GET /posts/:slug': (req, res, next) => {
+  'GET /posts/:slug': (req, res) => {
     const post = posts.filter(post => {
       return post.meta.slug === req.params.slug.toLowerCase()
     })
