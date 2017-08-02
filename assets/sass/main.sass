@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Quattrocento')
-
-html, body
+html, body, #__nuxt, #layout
   height: 100%
-
-body
-  border: 3px solid #050505
   background: #222222
-  color: white
-  font-family: 'Quattrocento', serif
-  font-size: 20px
 
-#header
-  background: #3B3B3B
-  position: fixed
-  width: 100%
-  border-right: 30px solid #050505
-  height: 30px
+.tippy-tooltip.navigation-theme
+  background: $color1
+  color: #222
+  font-weight: bold
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5)
+  font-size: 1em
+
+  [x-arrow]
+    border-top: 7px solid transparent
+    border-right: 7px solid $color1
+    border-bottom: 7px solid transparent
+
+a
+  color: $color1
+  text-decoration: none
+
+  &:hover
+    color: $color2
+    text-decoration: underline
