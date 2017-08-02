@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const marked = require('marked')
 
 global.Date.prototype.monthDays = function () {
   const d = new Date(this.getFullYear(), this.getMonth() + 1, 0)
@@ -31,7 +32,7 @@ const getHabitDays = (habitId, min, bonus) => {
   for (let day = 1; day <= days; day++) {
     const filePath = path.join(dir, `${zeroPadNum(day)}.json`)
     let done = false
-    let bonus = false
+    let gotBonus = false
 
     if (fs.existsSync(filePath)) {
       const dayObj = require(filePath)
@@ -42,11 +43,11 @@ const getHabitDays = (habitId, min, bonus) => {
       }
 
       if (val && val >= bonus) {
-        bonus = true
+        gotBonus = true
       }
     }
 
-    ret.push({ day, done, bonus })
+    ret.push({ day, done, bonus: gotBonus })
   }
 
   return ret
@@ -57,6 +58,9 @@ module.exports = {
     const habitsIndex = require(path.join(__dirname, '../assets/habits'))
     const habits = habitsIndex.map(habit => {
       const days = getHabitDays(habit.id, habit.min, habit.bonus)
+      habit.why = marked(habit.why)
+      habit.how = marked(habit.how)
+
       return Object.assign(habit, { days })
     })
 
