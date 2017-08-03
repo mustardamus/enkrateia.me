@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul>
-      <!--<li>
+      <li>
         <nuxt-link to="/" title="About">
           <icon-about />
         </nuxt-link>
@@ -10,7 +10,12 @@
         <nuxt-link to="/posts" title="Posts">
           <icon-posts />
         </nuxt-link>
-      </li>-->
+      </li>
+      <li>
+        <nuxt-link to="/travel" title="Traveling">
+          <icon-traveling />
+        </nuxt-link>
+      </li>
       <li>
         <nuxt-link to="/habits" title="Habits">
           <icon-habits />
@@ -24,9 +29,10 @@
 import IconAbout from '~components/icons/si-glyph-badge-name'
 import IconPosts from '~components/icons/si-glyph-document-copy'
 import IconHabits from '~components/icons/si-glyph-tag-one-plus'
+import IconTraveling from '~components/icons/si-glyph-global'
 
 export default {
-  components: { IconAbout, IconPosts, IconHabits },
+  components: { IconAbout, IconPosts, IconHabits, IconTraveling },
 
   data () {
     return {

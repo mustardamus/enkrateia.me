@@ -6,11 +6,17 @@ date: 2017-08-01
 
 https://www.stedavies.com/intermittent-fasting/
 
-### Day 1
+### Day 1 - Tuesday
 
-Last meal at 6:00pm.
+- Last meal at 6:00pm
 
-### Day 2
+### Day 2 - Wednesday
 
-75,8 kg
-Fasting for 18 hours.
+- Fasting for 18 hours
+- Fasting was pretty easy, from Thursday to Friday I try to increase it by 2 hours
+- Overall a productive day, but felt a bit down in the evening
+- Last snack at 7:00pm
+
+### Day 3 - Thursday
+
+- Fasting for 16 hours
