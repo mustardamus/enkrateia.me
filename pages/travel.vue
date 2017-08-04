@@ -1,11 +1,18 @@
 <template>
-  <div class="container is-fluid">
+  <div class="container">
     <div v-for="country in pictures" :key="country.country">
       <div v-for="city in country.cities" :key="city.city">
-        {{country.country}}
-        {{city.city}}
+        <h1 class="title">
+          {{country.country}}
+          {{city.city}}
+        </h1>
 
-        <div class="columns is-mobile is-multiline">
+        <img class="image"
+          :src="pictureUrl(country.country, city.city, covers[city.city])"
+          v-on:click="toggleCityPictures(city.city)"
+        />
+
+        <div class="columns is-mobile is-multiline" v-if="isCityOpen[city.city]">
           <div class="column is-4" v-for="picture in city.pictures" :key="picture">
             <a :href="pictureUrl(country.country, city.city, picture)">
               <img class="image" :src="thumbUrl(country.country, city.city, picture)" />
@@ -19,14 +26,31 @@
 
 <script>
 export default {
+  data () {
+    return {
+      isCityOpen: {
+        // Vienna: true,
+        // Berlin: false
+      }
+    }
+  },
+
   computed: {
     pictures () {
       return this.$store.state.travel.pictures
+    },
+
+    covers () {
+      return this.$store.state.travel.covers
     }
   },
 
   fetch ({ store }) {
     return store.dispatch('travel/loadPictures')
+  },
+
+  created () {
+    this.buildIsCityOpenIndex()
   },
 
   mounted () {
@@ -40,6 +64,16 @@ export default {
 
     thumbUrl (country, city, picture) {
       return this.pictureUrl(country, city, picture).replace('.JPG', '_thumb.JPG')
+    },
+
+    buildIsCityOpenIndex () {
+      Object.keys(this.covers).forEach(city => {
+        this.$set(this.isCityOpen, city, false)
+      })
+    },
+
+    toggleCityPictures (city) {
+      this.isCityOpen[city] = !this.isCityOpen[city]
     }
   }
 }
