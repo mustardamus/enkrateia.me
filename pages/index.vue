@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="columns is-multiline">
+    <!--<div class="columns is-multiline">
       <div class="column is-5">
         <div class="image mal">
           <img src="~assets/images/home-mal-action.jpg" />
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-    </div>
+    </div>-->
 
   </div>
 </template>
@@ -27,7 +27,7 @@
 <script>
 export default {
   mounted () {
-
+    window.location.href = '/travel'
   }
 }
 </script>
