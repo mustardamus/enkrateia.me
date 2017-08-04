@@ -1,6 +1,6 @@
 {
   "name": "enkrateia.me",
-  "version": "2017.08.02",
+  "version": "2017.08.04",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
