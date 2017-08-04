@@ -1,22 +1,27 @@
 <template>
   <div class="container">
-    <div v-for="country in pictures" :key="country.country">
-      <div v-for="city in country.cities" :key="city.city">
-        <h1 class="title">
-          {{country.country}}
-          {{city.city}}
-        </h1>
+    <div class="columns">
+      <div class="column is-2 is-hidden-mobile navigation">
+        <div v-for="country in pictures" :key="country.country">
+          <h2 class="title is-5">{{country.country}}</h2>
 
-        <img class="image"
-          :src="pictureUrl(country.country, city.city, covers[city.city])"
-          v-on:click="toggleCityPictures(city.city)"
-        />
+          <div v-for="city in country.cities" :key="city.city">
+            <a :href="'#' + city.city">{{city.city}}</a>
+          </div>
+        </div>
+      </div>
 
-        <div class="columns is-mobile is-multiline" v-if="isCityOpen[city.city]">
-          <div class="column is-4" v-for="picture in city.pictures" :key="picture">
-            <a :href="pictureUrl(country.country, city.city, picture)">
-              <img class="image" :src="thumbUrl(country.country, city.city, picture)" />
-            </a>
+      <div class="column pictures">
+        <div>
+          <div v-for="country in pictures" :key="country.country">
+            <div class="city" :id="city.city" v-for="city in country.cities" :key="city.city">
+              <city-gallery
+                :country="country.country"
+                :city="city.city"
+                :pictures="city.pictures"
+                :cover="covers[city.city]"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -25,15 +30,10 @@
 </template>
 
 <script>
+import CityGallery from '~components/CityGallery'
+
 export default {
-  data () {
-    return {
-      isCityOpen: {
-        // Vienna: true,
-        // Berlin: false
-      }
-    }
-  },
+  components: { CityGallery },
 
   computed: {
     pictures () {
@@ -49,32 +49,8 @@ export default {
     return store.dispatch('travel/loadPictures')
   },
 
-  created () {
-    this.buildIsCityOpenIndex()
-  },
-
   mounted () {
     document.getElementById('layout').scrollIntoView(true)
-  },
-
-  methods: {
-    pictureUrl (country, city, picture) {
-      return `/travel-pictures/${country}/${city}/${picture}`
-    },
-
-    thumbUrl (country, city, picture) {
-      return this.pictureUrl(country, city, picture).replace('.JPG', '_thumb.JPG')
-    },
-
-    buildIsCityOpenIndex () {
-      Object.keys(this.covers).forEach(city => {
-        this.$set(this.isCityOpen, city, false)
-      })
-    },
-
-    toggleCityPictures (city) {
-      this.isCityOpen[city] = !this.isCityOpen[city]
-    }
   }
 }
 </script>
@@ -82,15 +58,19 @@ export default {
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
 
-a
-  img
-    width: 100%
-    padding: 5px
-    background: $background3
-    border-radius: 2px
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+.navigation
+  margin: 30px 0 0 10px
 
-  &:hover
-    img
-      background: $color1
+  .title
+    color: white
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6)
+    margin: 20px 0 6px
+    font-family: $font2
+
+  a
+    font-family: $font1
+
+.pictures
+  .city
+    padding: 30px 10px 60px 10px
 </style>

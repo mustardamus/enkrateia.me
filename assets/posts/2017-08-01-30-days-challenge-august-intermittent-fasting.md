@@ -20,3 +20,10 @@ https://www.stedavies.com/intermittent-fasting/
 ### Day 3 - Thursday
 
 - Fasting for 16 hours
+- Last meal at 3:30pm
+- Couldn't easily fell asleep
+
+### Day 4 - Friday
+
+- Fasted for 20 hours
+- Again, pretty easy. Next week I will increase it by one hour
