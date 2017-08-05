@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container is-fluid">
     <div class="columns">
       <div class="column is-2 is-hidden-mobile navigation">
         <div v-for="country in pictures" :key="country.country">
@@ -14,7 +14,10 @@
       <div class="column pictures">
         <div>
           <div v-for="country in pictures" :key="country.country">
-            <div class="city" :id="city.city" v-for="city in country.cities" :key="city.city">
+            <div
+              class="city" :id="city.city"
+              v-for="city in country.cities" :key="city.city"
+            >
               <city-gallery
                 :country="country.country"
                 :city="city.city"

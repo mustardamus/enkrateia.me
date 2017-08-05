@@ -26,7 +26,7 @@ const posts = postsFiles.filter(fileName => {
   const content = fs.readFileSync(filePath, 'utf8')
   const front = frontMatter(content)
   const markdown = front.body
-  const excerpt = markdown.split('\n').filter(n => n !== '')[0]
+  const excerpt = markdown.split('\n\n').filter(n => n !== '')[0]
   let meta = front.attributes
 
   meta.dateFormatted = moment(meta.date).format('MMMM Do YYYY')

@@ -36,6 +36,10 @@ export default {
   asyncData ({ store, params, error }) {
     return store.dispatch('posts/loadBySlug', params.slug)
       .catch(() => error({ statusCode: 404, message: 'Post not found' }))
+  },
+
+  mounted () {
+    document.getElementById('layout').scrollIntoView(true)
   }
 }
 </script>
@@ -55,9 +59,10 @@ h1.title
   font-size: 1.12em
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6)
   padding: 30px
+  max-width: 800px
 
 .meta
-  margin-top: 60px
+  margin: 60px 0 0 30px
 
   li
     color: white
