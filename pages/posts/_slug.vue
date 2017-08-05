@@ -65,7 +65,6 @@ h1.title
   margin: 60px 0 0 30px
 
   li
-    color: white
     font-family: $font2
     font-size: 1.1em
     position: relative
