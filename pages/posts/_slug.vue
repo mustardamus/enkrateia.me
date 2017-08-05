@@ -6,7 +6,7 @@
       </div>
       <div class="column">
         <ul class="meta">
-          <li><icon-date /> {{post.meta.date}}</li>
+          <li><icon-date /> {{post.meta.dateFormatted}}</li>
         </ul>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul>
-      <!--<li>
+      <li>
         <nuxt-link to="/" title="About">
           <icon-about />
         </nuxt-link>
@@ -10,7 +10,7 @@
         <nuxt-link to="/posts" title="Posts">
           <icon-posts />
         </nuxt-link>
-      </li>-->
+      </li>
       <li>
         <nuxt-link to="/travel" title="Traveling">
           <icon-traveling />
