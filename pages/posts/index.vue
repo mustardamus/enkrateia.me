@@ -17,9 +17,7 @@
         </div>
 
         <div class="column">
-          <ul class="meta">
-            <li><icon-date /> {{post.meta.dateFormatted}}</li>
-          </ul>
+          <post-meta class="meta" :post="post" />
         </div>
       </div>
     </div>
@@ -27,10 +25,10 @@
 </template>
 
 <script>
-import IconDate from '~components/icons/si-glyph-calendar-empty'
+import PostMeta from '~components/PostMeta'
 
 export default {
-  components: { IconDate },
+  components: { PostMeta },
 
   computed: {
     posts () {
@@ -49,7 +47,6 @@ export default {
   methods: {
     onPostClick (post) {
       this.$router.push(`/posts/${post.meta.slug}`)
-      console.log('p', post)
     }
   }
 }
@@ -75,22 +72,6 @@ export default {
 
   .meta
     opacity: 0.5
-
-    li
-      font-family: $font2
-      font-size: 1.1em
-      position: relative
-      padding-left: 28px
-      color: $color2
-      float: right
-
-      svg
-        witdh: 20px
-        height: 20px
-        fill: $color1
-        position: absolute
-        top: 2px
-        left: 0
 
   &:hover
     cursor: pointer

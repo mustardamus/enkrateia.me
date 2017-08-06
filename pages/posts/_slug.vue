@@ -5,9 +5,7 @@
         <h1 class="title is-2">{{post.meta.title}}</h1>
       </div>
       <div class="column">
-        <ul class="meta">
-          <li><icon-date /> {{post.meta.dateFormatted}}</li>
-        </ul>
+        <post-meta class="meta" :post="post" />
       </div>
     </div>
 
@@ -16,10 +14,10 @@
 </template>
 
 <script>
-import IconDate from '~components/icons/si-glyph-calendar-empty'
+import PostMeta from '~components/PostMeta'
 
 export default {
-  components: { IconDate },
+  components: { PostMeta },
 
   data () {
     return {
@@ -62,20 +60,5 @@ h1.title
   max-width: 800px
 
 .meta
-  margin: 60px 0 0 30px
-
-  li
-    font-family: $font2
-    font-size: 1.1em
-    position: relative
-    padding-left: 28px
-    color: $color1
-
-    svg
-      witdh: 20px
-      height: 20px
-      fill: $color2
-      position: absolute
-      top: 2px
-      left: 0
+  margin: 60px 30px 0 30px
 </style>
