@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development node server/index.js",
-    "build:css": "rm static/css/global.css && node-sass --indented-syntax --output-style=compressed --include-path=node_modules --include-path=assets/sass < assets/sass/global.sass > static/css/global.css",
+    "build:css": "rm -f static/css/global.css && node-sass --indented-syntax --output-style=compressed --include-path=node_modules --include-path=assets/sass < assets/sass/global.sass > static/css/global.css",
     "build": "yarn build:css && nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "analyze": "nuxt build --analyze",
