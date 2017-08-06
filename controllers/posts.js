@@ -44,7 +44,7 @@ const postsIndex = posts.map(post => {
     meta: post.meta,
     excerptHtml: post.excerptHtml
   }
-})
+}).reverse()
 
 module.exports = {
   'GET /posts': (req, res) => {
