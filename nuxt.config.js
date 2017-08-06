@@ -29,6 +29,9 @@ module.exports = {
 
   head: {
     titleTemplate: '%s - Enkrateia.me - Digital Playground of Sebastian Senf',
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/images/favicon.png' }
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
