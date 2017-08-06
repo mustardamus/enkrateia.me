@@ -36,6 +36,15 @@
 import CityGallery from '~components/CityGallery'
 
 export default {
+  head () {
+    return {
+      title: 'Traveling Pictures',
+      meta: [
+        { hid: 'description', name: 'description', content: 'XXX tbd' }
+      ]
+    }
+  },
+
   components: { CityGallery },
 
   computed: {

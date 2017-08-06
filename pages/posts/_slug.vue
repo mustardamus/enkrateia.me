@@ -17,6 +17,15 @@
 import PostMeta from '~components/PostMeta'
 
 export default {
+  head () {
+    return {
+      title: this.post.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.post.excerpt }
+      ]
+    }
+  },
+
   components: { PostMeta },
 
   data () {

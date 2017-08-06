@@ -13,7 +13,7 @@
 
       <div class="columns">
         <div class="column is-9">
-          <div class="excerpt" v-html="post.excerpt"></div>
+          <div class="excerpt" v-html="post.excerptHtml"></div>
         </div>
 
         <div class="column">
@@ -28,6 +28,15 @@
 import PostMeta from '~components/PostMeta'
 
 export default {
+  head () {
+    return {
+      title: 'Blog Posts',
+      meta: [
+        { hid: 'description', name: 'description', content: 'XXX tbd' }
+      ]
+    }
+  },
+
   components: { PostMeta },
 
   computed: {

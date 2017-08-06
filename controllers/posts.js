@@ -33,15 +33,16 @@ const posts = postsFiles.filter(fileName => {
 
   return {
     meta,
+    excerpt,
     html: marked(markdown),
-    excerpt: marked(excerpt)
+    excerptHtml: marked(excerpt)
   }
 })
 
 const postsIndex = posts.map(post => {
   return {
     meta: post.meta,
-    excerpt: post.excerpt
+    excerptHtml: post.excerptHtml
   }
 })
 
