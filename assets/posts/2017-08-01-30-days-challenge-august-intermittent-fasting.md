@@ -34,3 +34,8 @@ https://www.stedavies.com/intermittent-fasting/
 ### Day 5 - Saturday
 
 - Fasting for 15 hours
+- Last snack at 8:30pm
+
+### Day 6 - Sunday
+
+- Fasting for 14 hours

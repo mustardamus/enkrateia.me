@@ -13,7 +13,7 @@ I had!
 
 <div class="columns">
   <div class="column is-3">
-    <img src="/assets/images/nodeschoolmuc.png" alt="Nodeschool Munich">
+    <img src="/images/nodeschoolmuc.png" alt="Nodeschool Munich">
   </div>
   <div class="column">
     <p>

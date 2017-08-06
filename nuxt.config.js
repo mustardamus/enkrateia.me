@@ -13,7 +13,7 @@ module.exports = {
   },
 
   css: [
-    { src: '~assets/sass/index.sass', lang: 'sass' }
+    { src: '~assets/sass/main.sass', lang: 'sass' }
   ],
 
   loading: {
@@ -30,7 +30,8 @@ module.exports = {
   head: {
     titleTemplate: '%s - Enkrateia.me - Digital Playground of Sebastian Senf',
     link: [
-      { rel: 'icon', type: 'image/png', href: '/images/favicon.png' }
+      { rel: 'icon', type: 'image/png', href: '/images/favicon.png' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/global.css' }
     ],
     meta: [
       { charset: 'utf-8' },
