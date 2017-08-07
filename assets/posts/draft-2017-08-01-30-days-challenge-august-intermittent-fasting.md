@@ -39,3 +39,12 @@ https://www.stedavies.com/intermittent-fasting/
 ### Day 6 - Sunday
 
 - Fasting for 14 hours
+- Last meal at 7:00pm
+
+### Day 7 - Monday
+
+- Fasting for 21 hours
+- Again, if I am occupied with things to do it is pretty easy not to think about
+  food
+- Been pretty productive as well. I figured I can just work deeply and time will
+  pass more quickly to the next meal
