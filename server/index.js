@@ -1,6 +1,6 @@
 const Nuxt = require('nuxt')
 const express = require('express')
-// const helmet = require('helmet')
+const helmet = require('helmet')
 let config = require('../nuxt.config.js')
 
 // const bodyParser = require('body-parser')
@@ -13,7 +13,7 @@ const nuxt = new Nuxt(config)
 const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || '3000'
 
-// app.use(helmet())
+app.use(helmet())
 app.use('/api', require('./api'))
 app.use(nuxt.render)
 
