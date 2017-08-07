@@ -25,5 +25,17 @@ https://www.stedavies.com/intermittent-fasting/
 
 ### Day 4 - Friday
 
-- Fasted for 20 hours
+- Fasting for 20 hours
 - Again, pretty easy. Next week I will increase it by one hour
+- Last meal at 8:00pm
+- Had increased productivity
+- Slept well again
+
+### Day 5 - Saturday
+
+- Fasting for 15 hours
+- Last snack at 8:30pm
+
+### Day 6 - Sunday
+
+- Fasting for 14 hours

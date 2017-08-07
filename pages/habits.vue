@@ -72,6 +72,15 @@ import MonthCalendar from '~components/MonthCalendar'
 import BonusIcon from '~components/icons/si-glyph-askterisk'
 
 export default {
+  head () {
+    return {
+      title: 'Habbits Logging',
+      meta: [
+        { hid: 'description', name: 'description', content: 'XXX tbd' }
+      ]
+    }
+  },
+
   components: { MonthCalendar, BonusIcon },
 
   computed: {

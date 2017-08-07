@@ -1,7 +1,8 @@
+const isDev = !(process.env.NODE_ENV === 'production')
+
 module.exports = {
   env: {
-    devBaseUrl: 'http://localhost:3000',
-    baseUrl: 'https://enkrateia.me'
+    baseUrl: isDev ? 'http://localhost:3000' : 'https://enkrateia.me'
   },
 
   build: {
@@ -12,7 +13,7 @@ module.exports = {
   },
 
   css: [
-    { src: '~assets/sass/index.sass', lang: 'sass' }
+    { src: '~assets/sass/main.sass', lang: 'sass' }
   ],
 
   loading: {
@@ -21,8 +22,22 @@ module.exports = {
 
   router: {
     scrollBehavior (to, from, savedPosition) {
-      // doesn't really work, see mounted() in pages
+      // doesn't really work with the layout, see mounted() in pages
       return { x: 0, y: 0 }
     }
+  },
+
+  head: {
+    titleTemplate: '%s - Enkrateia.me - Digital Playground of Sebastian Senf',
+    title: '...',
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/images/favicon.png' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/global.css' }
+    ],
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'XXX tbd' }
+    ]
   }
 }

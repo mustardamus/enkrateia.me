@@ -26,6 +26,15 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Hello!',
+      meta: [
+        { hid: 'description', name: 'description', content: 'XXX tbd' }
+      ]
+    }
+  },
+
   mounted () {
     window.location.href = '/travel'
   }

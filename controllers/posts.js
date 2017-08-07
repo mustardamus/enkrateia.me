@@ -3,6 +3,7 @@ const path = require('path')
 const marked = require('marked')
 const frontMatter = require('front-matter')
 const hljs = require('highlight.js')
+const moment = require('moment')
 
 marked.setOptions({
   langPrefix: 'hljs lang-', // .hljs needed for propper styling
@@ -25,21 +26,26 @@ const posts = postsFiles.filter(fileName => {
   const content = fs.readFileSync(filePath, 'utf8')
   const front = frontMatter(content)
   const markdown = front.body
-  const excerpt = markdown.split('\n').filter(n => n !== '')[0]
+  const excerpt = markdown.split('\n\n').filter(n => n !== '')[0]
+  let meta = front.attributes
+
+  meta.dateFormatted = moment(meta.date).format('MMMM Do YYYY')
+  meta.year = new Date(meta.date).getFullYear()
 
   return {
-    meta: front.attributes,
+    meta,
+    excerpt,
     html: marked(markdown),
-    excerpt: marked(excerpt)
+    excerptHtml: marked(excerpt)
   }
 })
 
 const postsIndex = posts.map(post => {
   return {
     meta: post.meta,
-    excerpt: post.excerpt
+    excerptHtml: post.excerptHtml
   }
-})
+}).reverse()
 
 module.exports = {
   'GET /posts': (req, res) => {
