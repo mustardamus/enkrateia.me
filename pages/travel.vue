@@ -40,7 +40,11 @@ export default {
     return {
       title: 'Traveling Pictures',
       meta: [
-        { hid: 'description', name: 'description', content: 'XXX tbd' }
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Pictures of my traveling through Europe as a digital nomad.'
+        }
       ]
     }
   },

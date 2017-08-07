@@ -76,7 +76,11 @@ export default {
     return {
       title: 'Habbits Logging',
       meta: [
-        { hid: 'description', name: 'description', content: 'XXX tbd' }
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Public habbit-logging. What I do everyday and why.'
+        }
       ]
     }
   },

@@ -39,7 +39,15 @@ export default {
     return {
       title: 'Blog Posts',
       meta: [
-        { hid: 'description', name: 'description', content: 'XXX tbd' }
+        {
+          hid:
+          'description',
+          name: 'description',
+          content: `
+            Tutorials, travel articles and general thoughts. Blogging on and off
+            since 2014.
+          `
+        }
       ]
     }
   },

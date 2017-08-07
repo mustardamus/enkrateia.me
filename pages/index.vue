@@ -30,7 +30,15 @@ export default {
     return {
       title: 'Hello!',
       meta: [
-        { hid: 'description', name: 'description', content: 'XXX tbd' }
+        {
+          hid: 'description',
+          name: 'description',
+          content: `
+            Digital playground of Sebastian Senf. Full-stack JavaScript
+            web-developer. Articles and tutorials. Traveling pictures. Projects.
+            Habbits-logging and many more. Hi!
+          `
+        }
       ]
     }
   },
