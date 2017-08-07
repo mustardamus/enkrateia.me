@@ -21,6 +21,11 @@
           <icon-habits />
         </nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/contact" title="Contact">
+          <icon-contact />
+        </nuxt-link>
+      </li>
     </ul>
   </nav>
 </template>
@@ -30,9 +35,16 @@ import IconAbout from '~components/icons/si-glyph-badge-name'
 import IconPosts from '~components/icons/si-glyph-document-copy'
 import IconHabits from '~components/icons/si-glyph-tag-one-plus'
 import IconTraveling from '~components/icons/si-glyph-global'
+import IconContact from '~components/icons/si-glyph-bubble-message-hi'
 
 export default {
-  components: { IconAbout, IconPosts, IconHabits, IconTraveling },
+  components: {
+    IconAbout,
+    IconPosts,
+    IconHabits,
+    IconTraveling,
+    IconContact
+  },
 
   data () {
     return {
