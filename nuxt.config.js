@@ -1,8 +1,7 @@
-const isDev = !(process.env.NODE_ENV === 'production')
-
 module.exports = {
   env: {
-    baseUrl: isDev ? 'http://localhost:3000' : 'https://enkrateia.me'
+    devBaseUrl: 'http://localhost:3000',
+    baseUrl: 'https://enkrateia.me'
   },
 
   build: {
