@@ -81,6 +81,9 @@ export default {
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
 
+.container
+  padding-top: 60px
+
 .post
   padding: 30px 30px 90px 30px
 
