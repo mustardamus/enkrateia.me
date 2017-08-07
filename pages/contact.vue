@@ -10,20 +10,25 @@
 
           <p class="control">
             <input
-              class="input email" type="text" name="email"
-              placeholder="your@mail.com"
+              type="text" name="email" placeholder="your@mail.com"
+              :class="{ input: true, email: true, 'is-danger': !isValidEmail }"
               v-model="email"
             />
           </p>
           <p class="control">
             <textarea
-              class="textarea" name="message" placeholder="Your Message"
+              name="message" placeholder="Your Message"
+              :class="{ textarea: true, 'is-danger': !isValidMessage }"
               v-model="message"
             ></textarea>
           </p>
           <p class="control">
-            <button type="submit" class="button is-primary is-fullwidth">
-              Send it!
+            <button
+              type="submit" class="button is-fullwidth is-primary"
+              :disabled="isLoading"
+            >
+              <template v-if="!isLoading">Send it!</template>
+              <template v-else>Sending...</template>
             </button>
           </p>
         </form>
@@ -73,6 +78,7 @@
 import IconEmail from '~components/icons/Mail_w_x2F__circle'
 import IconGithub from '~components/icons/Github_w_x2F__circle'
 import IconTwitter from '~components/icons/Twitter_w_x2F__circle'
+import axios from 'axios'
 
 export default {
   head () {
@@ -99,7 +105,8 @@ export default {
       email: '',
       message: '',
       isValidEmail: true,
-      isValidMessage: true
+      isValidMessage: true,
+      isLoading: false
     }
   },
 
@@ -110,7 +117,39 @@ export default {
 
   methods: {
     onSubmit () {
-      console.log('uhjaaa', this.email, this.message)
+      if (this.email.length === false || !this.validateEmail(this.email)) {
+        this.isValidEmail = false
+      } else {
+        this.isValidEmail = true
+      }
+
+      if (this.message.length === 0) {
+        this.isValidMessage = false
+      } else {
+        this.isValidMessage = true
+      }
+
+      if (this.isValidEmail && this.isValidMessage) {
+        this.sendMessage()
+      }
+    },
+
+    validateEmail (email) {
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      return re.test(email)
+    },
+
+    sendMessage () {
+      this.isLoading = true
+
+      axios.post('https://formspree.io/me@enkrateia.me', {
+        email: this.email,
+        message: this.message
+      }).then(() => {
+        this.isLoading = false
+      }).catch(() => {
+        this.isLoading = false
+      })
     }
   }
 }
@@ -151,6 +190,9 @@ form
 
       &:focus
         border: 3px solid $color2
+
+      &.is-danger
+        border: 3px solid #FA2A00 !important
 
     textarea
       font-family: $font1
