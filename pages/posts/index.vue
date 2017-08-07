@@ -1,26 +1,33 @@
 <template>
   <div class="container">
-    <div
-      class="post"
-      v-for="post in posts" :key="post.meta.slug"
-      @click="onPostClick(post)"
-    >
-      <h1 class="title is-2">
-        <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.meta.slug }}">
-          {{post.meta.title}}
-        </nuxt-link>
-      </h1>
+    <div v-for="post in posts" :key="post.meta.slug">
+      <div
+        class="post" @click="onPostClick(post)"
+        v-if="is2014Shown || post.meta.year !== 2014"
+      >
+        <h1 class="title is-2">
+          <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.meta.slug }}">
+            {{post.meta.title}}
+          </nuxt-link>
+        </h1>
 
-      <div class="columns">
-        <div class="column is-9">
-          <div class="excerpt" v-html="post.excerptHtml"></div>
-        </div>
+        <div class="columns">
+          <div class="column is-9">
+            <div class="excerpt" v-html="post.excerptHtml"></div>
+          </div>
 
-        <div class="column">
-          <post-meta class="meta" :post="post" />
+          <div class="column">
+            <post-meta class="meta" :post="post" />
+          </div>
         </div>
       </div>
     </div>
+
+    <h2 class="title is-4 more" v-if="!is2014Shown">
+      <a @click="show2014">
+        Show all 24 Posts from 2014...
+      </a>
+    </h2>
   </div>
 </template>
 
@@ -39,6 +46,12 @@ export default {
 
   components: { PostMeta },
 
+  data () {
+    return {
+      is2014Shown: false
+    }
+  },
+
   computed: {
     posts () {
       return this.$store.state.posts.index
@@ -56,6 +69,10 @@ export default {
   methods: {
     onPostClick (post) {
       this.$router.push(`/posts/${post.meta.slug}`)
+    },
+
+    show2014 () {
+      this.is2014Shown = true
     }
   }
 }
@@ -95,4 +112,13 @@ export default {
 
     .meta
       opacity: 1
+
+.more
+  font-family: $font2
+  padding: 30px 30px 60px 30px
+
+  a
+    display: block
+    border-top: 1px solid $background1
+    padding-top: 20px
 </style>

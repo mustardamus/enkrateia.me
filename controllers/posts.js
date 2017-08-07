@@ -30,6 +30,7 @@ const posts = postsFiles.filter(fileName => {
   let meta = front.attributes
 
   meta.dateFormatted = moment(meta.date).format('MMMM Do YYYY')
+  meta.year = new Date(meta.date).getFullYear()
 
   return {
     meta,
