@@ -29,6 +29,7 @@ module.exports = {
 
   head: {
     titleTemplate: '%s - Enkrateia.me - Digital Playground of Sebastian Senf',
+    title: '...',
     link: [
       { rel: 'icon', type: 'image/png', href: '/images/favicon.png' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/global.css' }
