@@ -48,3 +48,7 @@ https://www.stedavies.com/intermittent-fasting/
   food
 - Been pretty productive as well. I figured I can just work deeply and time will
   pass more quickly to the next meal
+
+### Day 8 - Tuesday
+
+- Fasting for 15 hours
