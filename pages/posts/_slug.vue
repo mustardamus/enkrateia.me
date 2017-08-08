@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="post" class="container">
     <div class="columns">
       <div class="column is-8">
         <h1 class="title is-2">{{post.meta.title}}</h1>
@@ -51,23 +51,57 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 @import '~assets/sass/variables'
 
-h1.title
-  font-family: $font1
-  color: $color1
-  padding: 30px 30px 20px 30px
-  margin-top: 30px
+#post
+  h1.title
+    font-family: $font1
+    color: $color1
+    padding: 30px 30px 20px 30px
+    margin-top: 30px
 
-.content
-  color: white
-  font-family: $font1
-  font-size: 1.12em
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6)
-  padding: 30px
-  max-width: 800px
+  .content
+    color: white
+    font-family: $font1
+    font-size: 1.12em
+    padding: 30px
 
-.meta
-  margin: 60px 30px 0 30px
+    p
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4)
+      max-width: 800px
+
+    h1, h2, h3, h4, h5, h6
+      color: $color2
+      font-family: $font2
+
+    code
+      font-family: $font3
+      background: $background3
+      border-radius: 2px
+      color: white
+      text-shadow: none
+      font-size: 1em
+
+    pre
+      padding: 10px
+      background: $background3
+      border-radius: 3px
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+      margin: 40px 0
+
+      code
+        background: $background1
+        font-size: 1em
+
+    img
+      border: 10px solid $background3
+      border-radius: 3px
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+    strong
+      color: white
+
+  .meta
+    margin: 60px 30px 0 30px
 </style>
