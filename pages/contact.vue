@@ -79,6 +79,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
+@import '~bulma/sass/utilities/mixins'
 
 .container
   padding-top: 60px
@@ -128,4 +129,8 @@ export default {
 
         svg
           fill: $color1
+
++touch
+  .container
+    padding-top: 30px
 </style>

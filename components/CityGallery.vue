@@ -88,6 +88,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
+@import '~bulma/sass/utilities/mixins'
 
 .header
   cursor: default
@@ -133,4 +134,21 @@ export default {
 .modal
   .modal-content
     width: 1024px
+
++mobile
+  .header
+    .title
+      text-align: center
+      margin: 0
+
+    .showall
+      padding: 0 0 10px 0
+      display: block
+      text-align: center
+
+  .gallery
+    text-align: center
+
+    a
+      margin: 0 auto
 </style>

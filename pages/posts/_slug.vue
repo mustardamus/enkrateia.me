@@ -53,6 +53,7 @@ export default {
 
 <style lang="sass">
 @import '~assets/sass/variables'
+@import '~bulma/sass/utilities/mixins'
 
 #post
   h1.title
@@ -104,4 +105,15 @@ export default {
 
   .meta
     margin: 60px 30px 0 30px
+
++mobile
+  #post
+    .meta
+      margin: 0 20px 0 0
+
+    h1.title
+      text-align: center
+
+    .content
+      padding-top: 60px
 </style>
