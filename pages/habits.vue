@@ -114,7 +114,6 @@ export default {
 
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
-@import '~bulma/sass/utilities/mixins'
 
 .habit
   padding: 30px
@@ -171,12 +170,4 @@ export default {
 
   .minimal-icon
     background: $color1
-
-+mobile
-  .habit
-    .meta
-      text-align: center
-
-    .calendar
-      margin: 0
 </style>

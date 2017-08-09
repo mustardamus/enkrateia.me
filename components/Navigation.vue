@@ -28,8 +28,12 @@
       </li>
     </ul>
 
-    <a class="delete is-large" @click="toggleShown"></a>
-    <a class="burger" @click="toggleShown"><icon-burger /></a>
+    <a class="delete is-large" @click="toggleShown" v-touch="toggleShown">
+
+    </a>
+    <a class="burger" @click="toggleShown" v-touch="toggleShown">
+      <icon-burger />
+    </a>
   </nav>
 </template>
 
@@ -147,8 +151,7 @@ ul
     width: 100%
     height: 50px
     z-index: 99999
-    border-right: none
-    border-bottom: 1px solid $background3
+    border: none
 
     ul
       display: none
@@ -162,9 +165,6 @@ ul
           width: 100%
           position: relative
           padding-left: 50px
-
-          &.nuxt-link-exact-active
-            padding-left: 80px
 
           svg
             margin: 0

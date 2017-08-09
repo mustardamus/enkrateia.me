@@ -73,7 +73,6 @@ export default {
 
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
-@import '~bulma/sass/utilities/mixins'
 
 .navigation
   margin: 30px 0 0 10px
@@ -90,11 +89,4 @@ export default {
 .pictures
   .city
     padding: 30px 10px 60px 10px
-
-+touch
-  .pictures
-    .city
-      .header
-        a.showall
-          padding: 0
 </style>
