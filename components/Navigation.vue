@@ -147,7 +147,8 @@ ul
     width: 100%
     height: 50px
     z-index: 99999
-    border: none
+    border-right: none
+    border-bottom: 1px solid $background3
 
     ul
       display: none
@@ -161,6 +162,9 @@ ul
           width: 100%
           position: relative
           padding-left: 50px
+
+          &.nuxt-link-exact-active
+            padding-left: 80px
 
           svg
             margin: 0
