@@ -17,13 +17,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '~assets/sass/variables'
-@import '~bulma/sass/utilities/mixins'
-
 #content
   padding-left: 51px
-
-+touch
-  #content
-    padding: 50px 0 0 0
 </style>
