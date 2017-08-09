@@ -28,10 +28,10 @@
       </li>
     </ul>
 
-    <a class="delete is-large" @click="toggleShown" v-touch="toggleShown">
+    <a class="delete is-large" @click="toggleShown">
 
     </a>
-    <a class="burger" @click="toggleShown" v-touch="toggleShown">
+    <a class="burger" @click="toggleShown">
       <icon-burger />
     </a>
   </nav>
