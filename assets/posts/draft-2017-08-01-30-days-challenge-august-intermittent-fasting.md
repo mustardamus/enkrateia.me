@@ -52,3 +52,10 @@ https://www.stedavies.com/intermittent-fasting/
 ### Day 8 - Tuesday
 
 - Fasting for 15 hours
+- Last snack at 6pm
+
+### Day 9 - Wednesday
+
+- Fasting for 21 hours
+- Been a little moody this afternoon, probably because I haven't ate a real
+  meal yesterday (only fruits and donuts)
