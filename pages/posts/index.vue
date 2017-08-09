@@ -88,6 +88,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
+@import '~bulma/sass/utilities/mixins'
 
 .container
   padding-top: 60px
@@ -132,4 +133,12 @@ export default {
     display: block
     border-top: 1px solid $background1
     padding-top: 20px
+
++touch
+  .post
+    .meta
+      display: none
+
+    .title
+      text-align: center
 </style>
