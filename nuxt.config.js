@@ -7,9 +7,14 @@ module.exports = {
   build: {
     vendor: [
       'axios',
-      'tippy.js'
+      'tippy.js',
+      'vue2-touch-events'
     ]
   },
+
+  plugins: [
+    '~plugins/vue2-touch-events'
+  ],
 
   css: [
     { src: '~assets/sass/main.sass', lang: 'sass' }
