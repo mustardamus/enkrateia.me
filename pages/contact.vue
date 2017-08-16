@@ -46,10 +46,10 @@
 </template>
 
 <script>
-import IconEmail from '~components/icons/Mail_w_x2F__circle'
-import IconGithub from '~components/icons/Github_w_x2F__circle'
-import IconTwitter from '~components/icons/Twitter_w_x2F__circle'
-import ContactForm from '~components/ContactForm'
+import IconEmail from '~/components/icons/Mail_w_x2F__circle'
+import IconGithub from '~/components/icons/Github_w_x2F__circle'
+import IconTwitter from '~/components/icons/Twitter_w_x2F__circle'
+import ContactForm from '~/components/ContactForm'
 
 export default {
   head () {

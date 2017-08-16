@@ -68,8 +68,8 @@
 </template>
 
 <script>
-import MonthCalendar from '~components/MonthCalendar'
-import BonusIcon from '~components/icons/si-glyph-askterisk'
+import MonthCalendar from '~/components/MonthCalendar'
+import BonusIcon from '~/components/icons/si-glyph-askterisk'
 
 export default {
   head () {

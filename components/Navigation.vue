@@ -38,12 +38,12 @@
 </template>
 
 <script>
-import IconAbout from '~components/icons/si-glyph-badge-name'
-import IconPosts from '~components/icons/si-glyph-document-copy'
-import IconHabits from '~components/icons/si-glyph-tag-one-plus'
-import IconTraveling from '~components/icons/si-glyph-global'
-import IconContact from '~components/icons/si-glyph-bubble-message-hi'
-import IconBurger from '~components/icons/si-glyph-two-arrow-down'
+import IconAbout from '~/components/icons/si-glyph-badge-name'
+import IconPosts from '~/components/icons/si-glyph-document-copy'
+import IconHabits from '~/components/icons/si-glyph-tag-one-plus'
+import IconTraveling from '~/components/icons/si-glyph-global'
+import IconContact from '~/components/icons/si-glyph-bubble-message-hi'
+import IconBurger from '~/components/icons/si-glyph-two-arrow-down'
 
 export default {
   components: {
@@ -72,7 +72,7 @@ export default {
   },
 
   mounted () {
-    if (process.BROWSER_BUILD) {
+    if (process.browser) {
       this.initTooltips()
     }
 

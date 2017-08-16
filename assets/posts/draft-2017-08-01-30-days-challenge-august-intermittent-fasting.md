@@ -4,6 +4,14 @@ slug: 30-day-challenge-august-intermittent-fasting
 date: 2017-08-01
 ---
 
+## Rules
+
+- Fast for at least 18 hours on fasting days
+- Fast two days in the first week
+- Fast three days in the other weeks
+- Try to increase fasting incrementally
+- It's okay to fail, simply try again on another day
+
 https://www.stedavies.com/intermittent-fasting/
 
 ### Day 1 - Tuesday
@@ -52,10 +60,53 @@ https://www.stedavies.com/intermittent-fasting/
 ### Day 8 - Tuesday
 
 - Fasting for 15 hours
-- Last snack at 6pm
+- Last snack at 6:00pm
 
 ### Day 9 - Wednesday
 
 - Fasting for 21 hours
 - Been a little moody this afternoon, probably because I haven't ate a real
   meal yesterday (only fruits and donuts)
+- Last meal at 7:00pm
+
+### Day 10 - Thursday
+
+- Fasting for 16 hours
+- Last meal at 6:00pm
+
+### Day 11 - Friday
+
+- Fasting for 19 hours
+- Somehow I it's a bit harder today, I wanted to do 21 hours again, but I am
+  craving
+- Could be because I got a lot of stuff to do, and I need glucose for that
+- I probably could go another two hours, but I don't want to
+- But it's okay, I set the minimal goal to 18h and I passed it - felxibility!
+- Last snack at 00:00am, weed munchies :)
+
+### Day 12 - Saturday
+
+- Fasting for 12 hours
+- Went to party, no idea when I drank my last beer
+
+### Day 13 - Sunday
+
+- Aftermath
+- Last snack at 7:00pm
+
+### Day 14 - Monday
+
+- Fasting for 16 hours
+- Last meal at 7:00pm
+
+## Day 15 - Tuesday
+
+- Fasting for 20 hours
+- Last meal at 7:00pm
+- Pretty unproductive, procrastinating a lot. But that is connected to the
+  aftermath of the party, I assume
+
+## Day 16 - Wednesday
+
+- Fasting for 18 hours
+- Last meal at 5:00pm

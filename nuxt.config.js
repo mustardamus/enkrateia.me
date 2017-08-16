@@ -8,7 +8,9 @@ module.exports = {
     vendor: [
       'axios',
       'tippy.js'
-    ]
+    ],
+
+    extractCSS: true
   },
 
   plugins: [
@@ -16,7 +18,7 @@ module.exports = {
   ],
 
   css: [
-    { src: '~assets/sass/main.sass', lang: 'sass' }
+    { src: '~/assets/sass/index.sass', lang: 'sass' }
   ],
 
   loading: {
@@ -34,8 +36,7 @@ module.exports = {
     titleTemplate: '%s - Enkrateia.me - Digital Playground of Sebastian Senf',
     title: '...',
     link: [
-      { rel: 'icon', type: 'image/png', href: '/images/favicon.png' },
-      { rel: 'stylesheet', type: 'text/css', href: '/css/global.css' }
+      { rel: 'icon', type: 'image/png', href: '/images/favicon.png' }
     ],
     meta: [
       { charset: 'utf-8' },
