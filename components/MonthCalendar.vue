@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import BonusIcon from '~components/icons/si-glyph-askterisk'
+import BonusIcon from '~/components/icons/si-glyph-askterisk'
 
 export default {
   components: { BonusIcon },

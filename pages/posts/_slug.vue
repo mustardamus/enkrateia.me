@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import PostMeta from '~components/PostMeta'
+import PostMeta from '~/components/PostMeta'
 
 export default {
   head () {

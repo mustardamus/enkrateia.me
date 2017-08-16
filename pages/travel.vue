@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import CityGallery from '~components/CityGallery'
+import CityGallery from '~/components/CityGallery'
 
 export default {
   head () {

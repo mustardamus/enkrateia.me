@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import IconDate from '~components/icons/si-glyph-calendar-empty'
+import IconDate from '~/components/icons/si-glyph-calendar-empty'
 
 export default {
   components: { IconDate },

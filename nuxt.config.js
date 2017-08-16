@@ -18,7 +18,7 @@ module.exports = {
   ],
 
   css: [
-    { src: '~assets/sass/index.sass', lang: 'sass' }
+    { src: '~/assets/sass/index.sass', lang: 'sass' }
   ],
 
   loading: {
