@@ -1,5 +1,11 @@
 <template>
   <div class="container">
+    <div class="columns">
+      <div class="column">
+        fucking vetur...
+      </div>
+    </div>
+
     <!--<div class="columns is-multiline">
       <div class="column is-5">
         <div class="image mal">
@@ -44,7 +50,7 @@ export default {
   },
 
   mounted () {
-    window.location.href = '/travel'
+
   }
 }
 </script>
