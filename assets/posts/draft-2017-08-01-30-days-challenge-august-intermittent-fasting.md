@@ -110,3 +110,7 @@ https://www.stedavies.com/intermittent-fasting/
 
 - Fasting for 18 hours
 - Last meal at 5:00pm
+
+## Day 17 - Thursday
+
+- Fasting for 20 hours
