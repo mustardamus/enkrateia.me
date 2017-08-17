@@ -1,3 +1,6 @@
+// this is a legacy file, css is now extracted with the build.extractCSS
+// option in nuxt.config.js
+
 const fs = require('fs')
 const path = require('path')
 const sass = require('node-sass')
