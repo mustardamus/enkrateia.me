@@ -113,4 +113,4 @@ https://www.stedavies.com/intermittent-fasting/
 
 ## Day 17 - Thursday
 
-- Fasting for 20 hours
+- Fasting for 21 hours

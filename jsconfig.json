@@ -3,5 +3,9 @@
     "./components/**/*.vue",
     "./layouts/**/*.vue",
     "./pages/**/*.vue"
+  ],
+
+  "exclude": [
+    "./node_modules"
   ]
 }
