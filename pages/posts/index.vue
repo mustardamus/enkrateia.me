@@ -72,6 +72,10 @@ export default {
 
   mounted () {
     document.getElementById('layout').scrollIntoView(true)
+
+    if (window.DISQUSWIDGETS) {
+      window.DISQUSWIDGETS.getCount({ reset: true })
+    }
   },
 
   methods: {

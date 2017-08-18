@@ -1,14 +1,24 @@
 <template>
   <ul>
-    <li><icon-date /> {{post.meta.dateFormatted}}</li>
+    <li>
+      <span>{{post.meta.dateFormatted}}</span>
+      <icon-date />
+    </li>
+    <li>
+      <span class="disqus-comment-count" :data-disqus-identifier="post.meta.slug">
+        No Comments
+      </span>
+      <icon-comments />
+    </li>
   </ul>
 </template>
 
 <script>
 import IconDate from '~/components/icons/si-glyph-calendar-empty'
+import IconComments from '~/components/icons/si-glyph-bubble-message-talk'
 
 export default {
-  components: { IconDate },
+  components: { IconDate, IconComments },
   props: { post: Object }
 }
 </script>
@@ -16,19 +26,26 @@ export default {
 <style lang="sass" scoped>
 @import '~assets/sass/variables'
 
-li
-  font-family: $font2
-  font-size: 1.1em
-  position: relative
-  padding-left: 28px
-  color: $color2
+ul
   float: right
+  padding-right: 20px
 
-  svg
-    witdh: 20px
-    height: 20px
-    fill: $color1
-    position: absolute
-    top: 2px
-    left: 0
+  li
+    font-family: $font2
+    font-size: 1.1em
+    color: $color2
+    position: relative
+    text-align: right
+
+    span
+      display: inline-block
+      padding-right: 10px
+
+    svg
+      width: 20px
+      height: 20px
+      fill: $color1
+      display: inline-block
+      position: absolute
+      top: 3px
 </style>
