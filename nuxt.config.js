@@ -38,6 +38,13 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/png', href: '/images/favicon.png' }
     ],
+    script: [
+      {
+        id: 'dsq-count-scr',
+        src: '//enkrateia.disqus.com/count.js',
+        async: true
+      }
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }

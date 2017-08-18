@@ -5410,6 +5410,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-disqus@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/vue-disqus/-/vue-disqus-2.0.3.tgz#33da59fdacc8fe687057561ef35de555369f2f1c"
+
 vue-eslint-parser@2.0.0-beta.7:
   version "2.0.0-beta.7"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-2.0.0-beta.7.tgz#43737861129620d16326ab7486919365b3d6e379"

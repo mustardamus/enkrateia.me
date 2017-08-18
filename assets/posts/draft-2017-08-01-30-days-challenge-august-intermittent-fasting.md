@@ -114,3 +114,9 @@ https://www.stedavies.com/intermittent-fasting/
 ## Day 17 - Thursday
 
 - Fasting for 21 hours
+- Back to productivity
+- Last meal at 6:00
+
+## Day 18 - Friday
+
+- Fasting for hours

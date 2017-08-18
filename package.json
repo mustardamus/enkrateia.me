@@ -27,7 +27,8 @@
     "moment": "^2.18.1",
     "nuxt": "^1.0.0-rc4",
     "promise-series2": "^1.1.0",
-    "tippy.js": "^1.2.0"
+    "tippy.js": "^1.2.0",
+    "vue-disqus": "^2.0.3"
   },
   "devDependencies": {
     "chokidar": "^1.7.0",
