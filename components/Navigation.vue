@@ -17,6 +17,11 @@
         </nuxt-link>
       </li>
       <li>
+        <nuxt-link to="/skills" title="Skills">
+          <icon-skills /> <span>Skills</span>
+        </nuxt-link>
+      </li>
+      <li>
         <nuxt-link to="/habits" title="Habits">
           <icon-habits /> <span>Habits</span>
         </nuxt-link>
@@ -44,6 +49,7 @@ import IconHabits from '~/components/icons/si-glyph-tag-one-plus'
 import IconTraveling from '~/components/icons/si-glyph-global'
 import IconContact from '~/components/icons/si-glyph-bubble-message-hi'
 import IconBurger from '~/components/icons/si-glyph-two-arrow-down'
+import IconSkills from '~/components/icons/si-glyph-multifunction-knife'
 
 export default {
   components: {
@@ -52,7 +58,8 @@ export default {
     IconHabits,
     IconTraveling,
     IconContact,
-    IconBurger
+    IconBurger,
+    IconSkills
   },
 
   data () {

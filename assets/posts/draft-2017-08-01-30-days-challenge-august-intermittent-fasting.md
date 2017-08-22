@@ -119,4 +119,24 @@ https://www.stedavies.com/intermittent-fasting/
 
 ## Day 18 - Friday
 
-- Fasting for hours
+- Fasting for 18 hours
+- Last snack at 20:00pm
+
+## Day 19 - Saturday
+
+- Fasting for 15 hours
+- Smoked some weed and had the late night munchies, around 1:00am
+
+## Day 20 - Sunday
+
+- Fasting for 10 hours
+- Last meal at 7:00pm
+
+## Day 21 - Monday
+
+- Fasting for 16 hours
+- Last meal at 5:00pm
+
+## Day 22 - Tuesday
+
+- Fasting for
