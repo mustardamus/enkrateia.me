@@ -39,6 +39,10 @@
     <a class="burger" @click="toggleShown">
       <icon-burger />
     </a>
+
+    <a class="code" href="https://github.com/mustardamus/enkrateia.me" title="View the code of this site at GitHub">
+      <icon-code />
+    </a>
   </nav>
 </template>
 
@@ -50,6 +54,7 @@ import IconTraveling from '~/components/icons/si-glyph-global'
 import IconContact from '~/components/icons/si-glyph-bubble-message-hi'
 import IconBurger from '~/components/icons/si-glyph-two-arrow-down'
 import IconSkills from '~/components/icons/si-glyph-multifunction-knife'
+import IconCode from '~/components/icons/si-glyph-screw'
 
 export default {
   components: {
@@ -59,7 +64,8 @@ export default {
     IconTraveling,
     IconContact,
     IconBurger,
-    IconSkills
+    IconSkills,
+    IconCode
   },
 
   data () {
@@ -92,9 +98,13 @@ export default {
     initTooltips () {
       const tippy = require('tippy.js')
 
-      this.$el.querySelectorAll('a').forEach(aEl => {
+      this.$el.querySelectorAll('ul a').forEach(aEl => {
         tippy(aEl, this.tippyOptions)
       })
+
+      const screwOpt = this.tippyOptions
+      screwOpt.theme = 'screw'
+      tippy(this.$el.querySelector('.code'), screwOpt)
     },
 
     toggleShown () {
@@ -125,6 +135,19 @@ nav
 
   .burger
     display: none
+
+  .code
+    position: absolute
+    left: 0
+    bottom: 10px
+    display: block
+    width: 50px
+
+    svg
+      fill: $background3
+      width: 30px
+      height: 30px
+      margin-left: 10px
 
 ul
   display: table-cell
@@ -161,6 +184,9 @@ ul
     border: none
     border-right: none
     border-bottom: 1px solid $background3
+
+    .code
+      display: none
 
     ul
       display: none
