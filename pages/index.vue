@@ -35,6 +35,16 @@
             </nuxt-link>
           </li>
           <li>
+            <nuxt-link to="/skills">
+              <icon-skills />
+              <p>
+                The <span>Skills</span> page gives you an overview about the
+                traits I developed over the years while working as a
+                professional web-developer.
+              </p>
+            </nuxt-link>
+          </li>
+          <li>
             <nuxt-link to="/habits">
               <icon-habits />
               <p>
@@ -130,6 +140,7 @@ import IconPosts from '~/components/icons/si-glyph-document-copy'
 import IconHabits from '~/components/icons/si-glyph-tag-one-plus'
 import IconTraveling from '~/components/icons/si-glyph-global'
 import IconContact from '~/components/icons/si-glyph-bubble-message-hi'
+import IconSkills from '~/components/icons/si-glyph-multifunction-knife'
 
 export default {
   head () {
@@ -154,7 +165,8 @@ export default {
     IconPosts,
     IconHabits,
     IconTraveling,
-    IconContact
+    IconContact,
+    IconSkills
   },
 
   mounted () {
@@ -184,7 +196,7 @@ export default {
 ul
   border-top: 1px solid $background1
   padding-top: 14px
-  margin-top: 20px
+  margin-top: 30px
 
   li
     padding-bottom: 14px
@@ -207,7 +219,6 @@ ul
         padding-left: 44px
         font-family: $font1
         color: white
-        font-size: 1.12em
 
         span
           font-family: $font2
