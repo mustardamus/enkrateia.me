@@ -105,3 +105,19 @@ around for the next one I will definitely be back. Some people gave me/us
 positive feedback right at the venue, others in comments at the
 [Meetup page](https://www.meetup.com/de-DE/Nodeschool-Munich/events/236819959/),
 which makes me even more grateful and looking forward to the next Nodeschool.
+
+#### Update
+
+In March 2017 I also mentored at the second Nodeschool, at the
+[Google Munich Headquarters](https://careers.google.com/locations/munich/). This
+time there were quite a lot of mentors and the same amount of learners as the
+last time at TNG. This resulted in a very chilled afternoon at a quite
+impressive office (Google, obviously). I also met some peeps who are working on
+the [V8 JavaScript Engine](https://developers.google.com/v8/).
+
+![Nodeschool Munich #2](/images/nodeschoolworkshop2.jpg)
+
+<small style="display:block;text-align:right;">
+  Again, photo from
+  <a href="https://twitter.com/nodeschoolmuc">@nodeschoolmuc</a>
+</small>

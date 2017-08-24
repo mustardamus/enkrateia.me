@@ -10,23 +10,36 @@ For the past 5 years I attend remote hackathons, namely
 [Static Showdown](https://staticshowdown.com/). It's fun, it's challenging, and
 it's good for learning new technologies.
 
+<div class="columns">
+  <div class="column is-3">
+    <img src="/images/rsz_static-showdown-pokal.jpg" alt="Winner winner, chicken dinner">
+  </div>
+  <div class="column">
+    <p>
 A couple of weeks ago the Static Showdown 2016 were held, a hackathon where you
 have 48 hours to build an static app.
-
+    </p>
+    <p>
 For quite a while I had an idea about a little game that is played with your
 voice, which includes silence detection and speech recognition. Static Showdown
 was a good opportunity to build it, since it only requires browser technology
 and no back-end.
-
+    </p>
+    <p>
 This time I wasn't really pumped up about the hackathon, or had any goals in
 mind. I just wanted to see how far I can go. And with that easy mind I was able
 to build the best hackathon entry yet, the most finished an polished.
-
+    </p>
+    <p>
 And it paid! After my 3rd place at Node Knockout in 2012 I set a new record for
 myself and scored 2nd place at Static Showdown!
-
+    </p>
+    <p>
 **Update:** The organizers did let me know that I also had the best solo score.
 Pretty gnarly! There is the first place :).
+    </p>
+  </div>
+</div>
 
 ![](/images/piffle.jpg)
 

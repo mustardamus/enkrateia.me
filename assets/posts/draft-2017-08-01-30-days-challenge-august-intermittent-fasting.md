@@ -139,4 +139,10 @@ https://www.stedavies.com/intermittent-fasting/
 
 ## Day 22 - Tuesday
 
-- Fasting for
+- Fasting for 21 hours
+- Smoked some weed, came back late and had the munchies
+
+## Day 23 - Wednesday
+
+- Fasting for 10 hours
+- Last snack at 5:00pm
