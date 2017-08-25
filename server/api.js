@@ -1,3 +1,5 @@
+// legacy code :)
+
 const path = require('path')
 const express = require('express')
 const ekso = require('ekso')

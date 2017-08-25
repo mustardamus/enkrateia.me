@@ -146,3 +146,12 @@ https://www.stedavies.com/intermittent-fasting/
 
 - Fasting for 10 hours
 - Last snack at 5:00pm
+
+## Day 24 - Thrusday
+
+- Fasting for 19 hours
+- Last meal at 7:00pm
+
+## Day 25 - Friday
+
+- Fasting for 18 hours

@@ -1,28 +1,20 @@
-const Nuxt = require('nuxt')
+const path = require('path')
 const express = require('express')
 const helmet = require('helmet')
-let config = require('../nuxt.config.js')
+const remountRouter = require('remount-router')
 
 // const bodyParser = require('body-parser')
 // const session = require('express-session')
 
-config.dev = !(process.env.NODE_ENV === 'production')
-
 const app = express()
-const nuxt = new Nuxt.Nuxt(config)
-const host = process.env.HOST || '127.0.0.1'
-const port = process.env.PORT || '3000'
 
 app.use(helmet())
-app.use('/api', require('./api'))
-app.use(nuxt.render)
+app.use(remountRouter({
+  expressAppInstance: app,
+  controllersPath: path.join(__dirname, '../controllers')
+}))
 
-if (config.dev) {
-  const builder = new Nuxt.Builder(nuxt)
-  builder.build()
-  require('./dev')(app)
+module.exports = {
+  path: '/',
+  handler: app._router
 }
-
-app.listen(port, () => {
-  console.log(`Server listening on http://${host}:${port}`)
-})

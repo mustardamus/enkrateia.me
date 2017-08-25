@@ -1,3 +1,5 @@
+// legacy code :)
+
 const path = require('path')
 const chokidar = require('chokidar')
 
