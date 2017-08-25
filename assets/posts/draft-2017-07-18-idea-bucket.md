@@ -10,3 +10,4 @@ date: 2017-07-17
 - Chalk Art Augmented Reality
 - Offline Docs
 - Vue Tang Clan
+- Neural Network Knock detection

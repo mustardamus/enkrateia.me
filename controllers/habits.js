@@ -54,7 +54,7 @@ const getHabitDays = (habitId, min, bonus) => {
 }
 
 module.exports = {
-  'GET /habits': (req, res) => {
+  'GET /' (req, res) {
     const habitsIndex = require(path.join(__dirname, '../assets/habits'))
     const habits = habitsIndex.map(habit => {
       const days = getHabitDays(habit.id, habit.min, habit.bonus)
