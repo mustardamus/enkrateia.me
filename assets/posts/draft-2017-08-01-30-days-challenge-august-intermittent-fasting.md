@@ -154,4 +154,4 @@ https://www.stedavies.com/intermittent-fasting/
 
 ## Day 25 - Friday
 
-- Fasting for 18 hours
+- Fasting for 19 hours
