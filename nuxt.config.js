@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   env: {
     devBaseUrl: 'http://localhost:3000',
@@ -51,7 +53,11 @@ module.exports = {
     ]
   },
 
-  serverMiddleware: [
-    '~/server'
+  modules: [
+    ['~/modules/remount-router', {
+      controllersPath: path.join(__dirname, 'controllers'),
+      controllersGlob: '*.js',
+      apiEndpoint: '/api'
+    }]
   ]
 }
