@@ -1,6 +1,6 @@
 {
   "name": "enkrateia.me",
-  "version": "2017.08.25",
+  "version": "2017.08.28",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -25,7 +25,7 @@
     "jimp": "^0.2.28",
     "marked": "^0.3.6",
     "moment": "^2.18.1",
-    "nuxt": "^1.0.0-rc4",
+    "nuxt": "^1.0.0-rc6",
     "promise-series2": "^1.1.0",
     "remount-router": "^0.1.2",
     "tippy.js": "^1.2.0",

@@ -155,3 +155,15 @@ https://www.stedavies.com/intermittent-fasting/
 ## Day 25 - Friday
 
 - Fasting for 19 hours
+- Last meal at 4:00pm
+- Smoked weed in the night, a little bit of late night munchies
+
+## Day 26 - Saturday
+
+- Fasting for 10 hours
+- Again, smoked some weed and ate late, around 10:00pm
+
+## Day 27 - Sunday
+
+- Fasting for 11 hours
+- Last meal at 5:00pm
