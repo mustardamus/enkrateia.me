@@ -5001,9 +5001,9 @@ relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
 
-remount-router@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/remount-router/-/remount-router-0.1.2.tgz#14c7876991977fddf228f3225824a134b40e0251"
+remount-router@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/remount-router/-/remount-router-0.2.0.tgz#c659350f93febd57ae345d7f8f7d4e140a17980b"
   dependencies:
     chokidar "^1.7.0"
     colors "^1.1.2"
