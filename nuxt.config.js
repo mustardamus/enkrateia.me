@@ -54,10 +54,6 @@ module.exports = {
   },
 
   modules: [
-    ['~/modules/remount-router', {
-      controllersPath: path.join(__dirname, 'controllers'),
-      controllersGlob: '*.js',
-      apiEndpoint: '/api'
-    }]
+    'remount-router/nuxt'
   ]
 }
