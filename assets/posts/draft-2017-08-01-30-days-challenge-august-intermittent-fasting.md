@@ -167,3 +167,22 @@ https://www.stedavies.com/intermittent-fasting/
 
 - Fasting for 11 hours
 - Last meal at 5:00pm
+
+## Day 28 - Monday
+
+- Fasting for 19 hours
+- Last meal at 4:00pm
+
+## Day 29 - Tuesday
+
+- Fasting for 21 hours
+- Smoked weed, late night snack
+
+## Day 30 - Wednesday
+
+- Fasting for 12 hours
+- Last meal at 6:00pm
+
+## Day 31 - Thursday
+
+- Fasting for 18 hours

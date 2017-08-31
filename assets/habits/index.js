@@ -60,6 +60,7 @@ module.exports = [
   {
     id: 'wooping',
     title: 'WOOPing',
+    inactive: true,
     why: `
 - Increase the chance working toward and completing a goal ([How to Commit to a Goal](http://www.spring.org.uk/2011/01/how-to-commit-to-a-goal.php))
 - Identifying the obstacles that might occur
