@@ -60,6 +60,7 @@ module.exports = [
   {
     id: 'wooping',
     title: 'WOOPing',
+    inactive: true,
     why: `
 - Increase the chance working toward and completing a goal ([How to Commit to a Goal](http://www.spring.org.uk/2011/01/how-to-commit-to-a-goal.php))
 - Identifying the obstacles that might occur
@@ -149,6 +150,58 @@ module.exports = [
 - If you feel the urge or are bored, do another habit instead
 - Ask yourself if you want to feel better overall, or for a couple of seconds
 - Bonus point for not masturbating
+    `,
+    unit: '1 = done, 2 = bonus',
+    min: 1,
+    bonus: 2
+  },
+  {
+    id: 'fasting',
+    title: '8h Eating Window / Intermittent Fasting',
+    why: `
+- It helps with calorie restriction and therefor loosing weight and body fat
+- It helps cleaning and repairing damaged cells, which slows down the aging
+  process
+- The brain creates new neurons and protects against brain damage
+- "I fast for greater physical and mental efficiency" - Plato
+- [A Guide To Intermittent Fasting](https://www.stedavies.com/intermittent-fasting/)
+    `,
+    how: `
+- Fasting for at least 16 hours a day, resulting in a 8 hours eating window
+- At least three times a week, try at least 18 hours of fasting
+- Play around with the fasting times, setting a new record (currently it's 21h)
+- It is okay to fail, simply try the next day
+    `,
+    unit: 'hours',
+    min: 16,
+    bonus: 18
+  },
+  {
+    id: 'goals',
+    title: 'Daily Goals',
+    why: `
+- To avoid procrastination - be aware what you want to do and when you want to
+  do it
+- To achieve your weekly/monthly/yearly goals, the best way is to break it down
+  in actionable chunks that are easily done and not overwhelming
+- You will have a log and can see your progress - get better, get motivated
+- Write down your notes/thoughts/to-do's to get them out of your head, having
+  the most mental energy you need to tackle the goals right in front of you
+    `,
+    how: `
+- In the evening, the day before, loosly write down where you left off and what
+  you would like to achieve the next day
+- Have a box for each big goal you want to tackle
+- Have a checkbox right next to the title, if you hit the goal, tick it off
+- Break down each big goal in an actionable to-do list with a checkbox next to
+  each step
+- Plan when you will start a big goal, and how long you think it will take you
+- Refine the times as you go with your day
+- In another area of the page, write down thoughts/notes/to-do's as they come to
+  mind - don't act on them if you are still working on a big goal
+- Use the Pomodoro technique (25 minutes work / 5 minutes break) to break down
+  your big goals and to plan the times
+- Bonus point for achieving the daily goals
     `,
     unit: '1 = done, 2 = bonus',
     min: 1,
