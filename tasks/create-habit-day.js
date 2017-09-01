@@ -20,7 +20,7 @@ const curDayPath = path.join(curMonthPath, `${curDay}.json`)
 const habits = require(habitsDir)
 const habitsObj = {}
 
-habits.forEach(habit => {
+habits.filter(habit => habit.inactive !== true).forEach(habit => {
   habitsObj[habit.id] = 0
 })
 

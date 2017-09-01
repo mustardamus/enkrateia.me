@@ -154,5 +154,37 @@ module.exports = [
     unit: '1 = done, 2 = bonus',
     min: 1,
     bonus: 2
+  },
+  {
+    id: 'fasting',
+    title: '8h Eating Window / Intermittent Fasting',
+    why: `
+- It helps with calorie restriction and therefor loosing weight and body fat
+- It helps cleaning and repairing damaged cells, which slows down the aging
+  process
+- The brain creates new neurons and protects against brain damage
+- "I fast for greater physical and mental efficiency" - Plato
+- [A Guide To Intermittent Fasting](https://www.stedavies.com/intermittent-fasting/)
+    `,
+    how: `
+- Fasting for at least 16 hours a day, resulting in a 8 hours eating window
+- At least three times a week, try at least 18 hours of fasting
+- Play around with the fasting times, setting a new record (currently it's 21h)
+- It is okay to fail, simply try the next day
+    `,
+    unit: 'hours',
+    min: 16,
+    bonus: 18
+  },
+  {
+    id: 'goals',
+    title: 'Daily Goals',
+    why: ``,
+    how: `
+- Bonus point for 'doodlifying' the page
+    `,
+    unit: '1 = done, 2 = bonus',
+    min: 1,
+    bonus: 2
   }
 ]
