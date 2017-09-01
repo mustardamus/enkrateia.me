@@ -42,6 +42,18 @@
                 </li>
               </ul>
             </template>
+            <template v-else-if="habit.id === 'goals'">
+              <ul>
+                <li>
+                  <i class="minimal-icon" />
+                  Minimal: <span>Set your daily goals</span>
+                </li>
+                <li>
+                  <bonus-icon class="bonus-icon" />
+                  Bonus: <span>Achieve your daily goals</span>
+                </li>
+              </ul>
+            </template>
             <template v-else>
               <ul>
                 <li>

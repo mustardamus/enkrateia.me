@@ -179,9 +179,29 @@ module.exports = [
   {
     id: 'goals',
     title: 'Daily Goals',
-    why: ``,
+    why: `
+- To avoid procrastination - be aware what you want to do and when you want to
+  do it
+- To achieve your weekly/monthly/yearly goals, the best way is to break it down
+  in actionable chunks that are easily done and not overwhelming
+- You will have a log and can see your progress - get better, get motivated
+- Write down your notes/thoughts/to-do's to get them out of your head, having
+  the most mental energy you need to tackle the goals right in front of you
+    `,
     how: `
-- Bonus point for 'doodlifying' the page
+- In the evening, the day before, loosly write down where you left off and what
+  you would like to achieve the next day
+- Have a box for each big goal you want to tackle
+- Have a checkbox right next to the title, if you hit the goal, tick it off
+- Break down each big goal in an actionable to-do list with a checkbox next to
+  each step
+- Plan when you will start a big goal, and how long you think it will take you
+- Refine the times as you go with your day
+- In another area of the page, write down thoughts/notes/to-do's as they come to
+  mind - don't act on them if you are still working on a big goal
+- Use the Pomodoro technique (25 minutes work / 5 minutes break) to break down
+  your big goals and to plan the times
+- Bonus point for achieving the daily goals
     `,
     unit: '1 = done, 2 = bonus',
     min: 1,
