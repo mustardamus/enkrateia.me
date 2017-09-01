@@ -1,6 +1,6 @@
 ---
-title: 30 Day Challenge August - Intermittent Fasting
-slug: 30-day-challenge-august-intermittent-fasting
+title: 30 Days Challenge August - Intermittent Fasting
+slug: 30-days-challenge-august-intermittent-fasting
 date: 2017-08-01
 ---
 
