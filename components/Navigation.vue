@@ -22,11 +22,6 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/habits" title="Habits">
-          <icon-habits /> <span>Habits</span>
-        </nuxt-link>
-      </li>
-      <li>
         <nuxt-link to="/contact" title="Contact">
           <icon-contact /> <span>Contact</span>
         </nuxt-link>

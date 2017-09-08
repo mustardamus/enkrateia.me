@@ -1,17 +1,20 @@
 <template>
   <div class="container">
     <div class="columns">
-      <div class="column is-6 intro">
+      <div class="column intro">
         <h1 class="title is-1">Welcome Stranger!</h1>
 
         <p>
           You've just arrived at the digital shelter of Sebastian Senf. Call me
           Basti. Enjoy yourself!
         </p>
+      </div>
+    </div>
 
+    <div class="columns">
+      <div class="column">
         <img class="image" src="/travel-pictures/Bulgaria/Sofia/100_1107.JPG" />
       </div>
-
       <div class="column">
         <ul>
           <li>
@@ -41,16 +44,6 @@
                 The <span>Skills</span> page gives you an overview about the
                 traits I developed over the years while working as a
                 professional web-developer.
-              </p>
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/habits">
-              <icon-habits />
-              <p>
-                The <span>Habits</span> page is where I publicly log the habits
-                I wish to establish. More eyes equals less failure - at least
-                that is the plan.
               </p>
             </nuxt-link>
           </li>
@@ -196,7 +189,6 @@ export default {
 ul
   border-top: 1px solid $background1
   padding-top: 14px
-  margin-top: 30px
 
   li
     padding-bottom: 14px
