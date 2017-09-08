@@ -10,7 +10,8 @@
     "analyze": "nuxt build --analyze",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "habit": "node tasks/create-habit-day.js",
-    "travel": "node tasks/resize-travel-pictures.js"
+    "travel": "node tasks/resize-travel-pictures.js",
+    "postinstall": "node tasks/git/init.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
