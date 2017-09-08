@@ -8,6 +8,5 @@ const options = '--ext .js,.vue --ignore-path .gitignore .'.split(' ')
 const lint = spawn(eslint, options, { stdio: ['inherit', 'inherit', 'inherit'] })
 
 lint.on('close', code => {
-  console.log('c', code)
   process.exit(code)
 })
