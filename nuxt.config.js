@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   env: {
     devBaseUrl: 'http://localhost:3000',
